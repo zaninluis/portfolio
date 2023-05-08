@@ -1,0 +1,236 @@
+ /* Gerais */
+ /* Estilos Gerais */
+ .row {
+     margin: 0;
+ }
+
+ .container {
+     /* Superior e inferior e zerar laterais */
+     Padding: 70px 0;
+ }
+
+ p,
+ li {
+     color: #444;
+     font-size: 14px;
+ }
+
+ /* Estilos da navegação */
+ header,
+ .navbar {
+     Background-color: #051f2c;
+     color: #444;
+ }
+
+ #nav-container {
+     padding-top: 0;
+     padding-bottom: 0;
+ }
+
+ #logo {
+     width: 75px;
+ }
+
+ .navbar-brand {
+     padding: 0;
+     color: #FFF;
+ }
+
+ .navbar-brand:hover {
+     color: #FFF;
+ }
+
+ #navbar-links a {
+     color: #FFF;
+ }
+
+ /* Paddings dos links: */
+ .navbar-expand-lg .navbar-nav .nav-link {
+     padding: 1rem .8rem;
+     /* rem trabalha com elemento root, por isso o r */
+     /* se a fonte tiver 14px 1rem significa 14px de padding. */
+     /* .8rem 80% de 14px */
+ }
+
+
+ .container-fluid {
+     padding: 0;
+ }
+
+ #mainSlider .carousel-inner,
+ #mainSlider .carousel-item {
+     height: 90vh;
+ }
+
+ #mainSlider .carousel-caption {
+     top: 30;
+ }
+
+ #mainSlider .carousel-caption h2 {
+     font-size: 50px;
+     margin-bottom: 30px
+ }
+
+ #mainSlider .carousel-caption p {
+     font-size: 22px;
+     font-weight: 300;
+     margin-bottom: 100px;
+     /* para descolar do botão */
+     color: white;
+ }
+
+ .main-btn {
+     background-color: #65daf9;
+     color: #FFF;
+     /*cor fonte branca */
+     text-transform: uppercase;
+     /* tudo maiusculo */
+     width: 200px;
+     height: 60px;
+     padding: 1px 20px;
+     /* para descolar o texto do botão */
+     border-radius: 30px;
+     /*arredondar a borda */
+     border: 3px solid transparent;
+     /*q vai virar azul */
+     transition: .5s
+         /* para ter holding mais suave de 0,5 segundos */
+ }
+
+ /* quando o mouse passa sobre */
+ .main-btn:hover {
+     text-decoration: none;
+     color: #FFF;
+     background-color: transparent;
+     border-color: #65daf9;
+ }
+
+ /* quando indicator estiver ativo, fica azul*/
+ .carousel-indicators .active {
+     background-color: #65daf9;
+ }
+
+ #sobre-mim {
+     background-color: #f9f9f9;
+ }
+
+ .main-title {
+     color: #444;
+     margin: 0 0 65px 0;
+     /* pra cima, pra direita, pra baixo, pra esquerda */
+     font-size: 40px;
+     text-align: center;
+ }
+
+ .about-title {
+     font-size: 17px;
+     color: #444;
+     text-transform: uppercase;
+     font-weight: bold;
+ }
+
+ #about-list {
+     list-style: none;
+     padding-left: 0;
+ }
+
+ #about-list li {
+     line-height: 30px;
+ }
+
+ #about-list i {
+     color: #65daf9;
+     margin-right: 15px;
+ }
+
+ .card-body {
+     text-align: center;
+ }
+
+
+ /* RESPONSIVE */
+
+ @media(max-width: 768px) {
+     .container {
+         padding: 20px 0;
+     }
+
+     #mainSlider .carousel-inner,
+     #mainSlider .carousel-item {
+         height: auto;
+     }
+
+     #mainSlider .carousel-caption {
+         font-size: 20px;
+     }
+
+     #mainSlider .carousel-caption p {
+         font-size: 15px;
+         margin-bottom: 20px;
+     }
+
+
+
+     /* portifolio */
+     .card-title {
+         font-size: 14px;
+     }
+
+     .card-text {
+         font-size: 12px;
+     }
+
+     .container.fluid {
+         width: 100%;
+     }
+ }
+
+ @media (max-width: 425px) {
+     #mainSlider {
+         margin-top: 125px;
+     }
+
+     #mainSlider .carousel-caption {
+         top: 5%;
+     }
+
+     #mainSlider .carousel-caption h2 {
+         font-size: 18px;
+         margin-bottom: 40px;
+     }
+
+     #mainSlider .carousel-caption p {
+         display: none;
+     }
+
+     .carousel-caption .main-btn {
+         font-size: 14px;
+     }
+
+     .main-title {
+         font-size: 1 0px;
+     }
+
+     #sobre-mim img {
+         margin-top: 0;
+         margin-bottom: 40px;
+     }
+
+     #portifolio-area .col-md-3 {
+         width: 50%;
+         margin-bottom: 30px;
+     }
+ }
+
+
+ /* estilização do footer */
+
+ #contato-area {
+     text-align: center;
+ }
+
+ .contact-box {
+     padding-bottom: 50px;
+     margin-bottom: 50px;
+     border-bottom: 1px solid #3ec1d5;
+ }
