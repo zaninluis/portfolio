@@ -1,12 +1,16 @@
- /* Gerais */
  /* Estilos Gerais */
+
+ body{
+    font-family: JetBrains Mono;    
+ }
+
  .row {
      margin: 0;
  }
 
  .container {
      /* Superior e inferior e zerar laterais */
-     Padding: 70px 0;
+     padding: 70px 0;
  }
 
  p,
@@ -47,9 +51,7 @@
  /* Paddings dos links: */
  .navbar-expand-lg .navbar-nav .nav-link {
      padding: 1rem .8rem;
-     /* rem trabalha com elemento root, por isso o r */
-     /* se a fonte tiver 14px 1rem significa 14px de padding. */
-     /* .8rem 80% de 14px */
+     
  }
 
 
@@ -116,7 +118,7 @@
 
  .main-title {
      color: #444;
-     margin: 0 0 65px 0;
+     margin: 65px 0 65px 0;
      /* pra cima, pra direita, pra baixo, pra esquerda */
      font-size: 40px;
      text-align: center;
@@ -147,12 +149,18 @@
      text-align: center;
  }
 
+ a { color: inherit;
+    text-decoration: none; } 
+
 
  /* RESPONSIVE */
 
  @media(max-width: 768px) {
      .container {
          padding: 20px 0;
+     }
+     #mainSlider {
+        margin-top: 125px;
      }
 
      #mainSlider .carousel-inner,
@@ -166,10 +174,18 @@
 
      #mainSlider .carousel-caption p {
          font-size: 15px;
-         margin-bottom: 20px;
+         margin-bottom: 10px;
      }
 
+     .about-title {
+        font-size: 17px;
+        color: #444;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 30px;
+    }
 
+     
 
      /* portifolio */
      .card-title {
@@ -187,7 +203,7 @@
 
  @media (max-width: 425px) {
      #mainSlider {
-         margin-top: 125px;
+         margin-top: 169px;
      }
 
      #mainSlider .carousel-caption {
@@ -208,7 +224,7 @@
      }
 
      .main-title {
-         font-size: 1 0px;
+         font-size: 10px;
      }
 
      #sobre-mim img {
@@ -218,7 +234,7 @@
 
      #portifolio-area .col-md-3 {
          width: 50%;
-         margin-bottom: 30px;
+         margin-bottom: 0px;
      }
  }
 
