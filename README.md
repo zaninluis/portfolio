@@ -52,4 +52,4 @@ Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICEN
 ## 👨‍💻 Autor
 
 Desenvolvido por **Luis Zanin**  
-[LinkedIn](https://www.linkedin.com/in/luiszanin) | [GitHub](https://github.com/zaninluis)
+[LinkedIn](https://www.linkedin.com/in/zaninluis/) | [GitHub](https://github.com/zaninluis)
